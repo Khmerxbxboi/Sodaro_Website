@@ -1,0 +1,471 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: #f4f4f4;
+    padding-top: 70px;
+    padding-bottom: 50px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    background: #333;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    width: 100%; 
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px; 
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #1E90FF;
+}
+.logo img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    background: #333;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #1E90FF;
+}
+
+
+
+
+.sign-in-btn {
+    background: #007BFF;
+    color: white;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    margin-left: auto;
+}
+
+.sign-in-btn:hover {
+    background: #0672e6;
+}
+
+
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+}
+
+
+.info-container {
+    display: flex;
+    align-items: center;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 100%; 
+    margin-bottom: 40px;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.info-container img {
+    width: 55%;
+    height: 55%;
+    border-radius: 10px;
+    object-fit: cover;
+
+    
+}
+
+.info-text {
+    flex: 1;
+    max-width: 600px;
+    margin-left: 20px; 
+}
+
+.info-text h2 {
+    font-size: 24px;
+    color: #333;
+}
+
+.info-text p {
+    font-size: 16px;
+    color: #666;
+    margin-top: 10px;
+}
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 900px;
+    width: 100%;
+}
+
+.content-box {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.content-box h2 {
+    font-size: 20px;
+    color: #333;
+}
+
+.content-box p {
+    font-size: 16px;
+    color: #666;
+    margin-top: 10px;
+}
+
+
+
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background: #333;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+}
+
+/* 📱 MOBILE RESPONSIVENESS */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px 0;
+    }
+
+    .sign-in-btn {
+        width: auto;
+        max-width: 180px;
+        margin: 10px 0;
+        padding: 10px;
+        font-size: 16px;
+    }
+
+  
+    .info-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .info-container img {
+        width: 50%;
+        height: 65%;
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+.bg-container {
+    padding-left: 10%;
+    padding-right: 10%;
+    background: yellow;
+    background-size: cover;
+    background-position: center;
+  }
+ 
+  .buttonContainer {
+    background: red;
+   }
+ 
+  .inline-choices {
+    display: inline-block;
+    vertical-align: top;
+    width: 30%;
+     }
+ 
+
+     .demo-button {
+        background-color: #007BFF; 
+        color: white; 
+        padding: 12px 24px; 
+        font-size: 16px; 
+        border: none; 
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease; 
+      }
+      
+      .demo-button:hover {
+        background-color: #0056b3; 
+      }
+
+      .grid-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); 
+        gap: 20px; 
+        padding: 20px;
+    }
+    
+    .content-box {
+        padding: 20px;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        text-align: center;
+    }
+    
+    .product {
+        margin-top: 20px;
+    }
+    
+    .product-image {
+        width: 250px;
+        height: 250px;
+        object-fit: cover; /* Ensures images are resized correctly without distortion */
+        border-radius: 10px;
+    }
+    
+    .product-description {
+        margin-top: 10px;
+        font-size: 14px;
+        color: #555;
+    }
+    
+    
+
+
+    .pie-chart {
+        background:
+            radial-gradient(
+                circle closest-side,
+                white 0,
+                white 56.88%,
+                transparent 56.88%,
+                transparent 72%,
+                white 0
+            ),
+            conic-gradient(
+                from 41deg,
+                #4e79a7 0,
+                #4e79a7 43.7%,
+                #f28e2c 0,
+                #f28e2c 70.1%,
+                #e15759 0,
+                #e15759 88.5%,
+                #76b7b2 0,
+                #76b7b2 100%
+        );
+
+        position: relative;
+        width: 500px;
+        height: 500px; /* Adjust to make it a perfect circle */
+        margin: 0 auto; /* Center the chart horizontally */
+        outline: 1px solid #ccc;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .pie-chart h2 {
+        position: absolute;
+        margin: 1rem;
+    }
+    
+    .pie-chart cite {
+        position: absolute;
+        bottom: 0;
+        font-size: 80%;
+        padding: 1rem;
+        color: gray;
+    }
+    
+    .pie-chart figcaption {
+        position: absolute;
+        bottom: 1em;
+        right: 1em;
+        font-size: smaller;
+        text-align: right;
+    }
+    
+    .pie-chart span:after {
+        display: inline-block;
+        content: "";
+        width: 0.8em;
+        height: 0.8em;
+        margin-left: 0.4em;
+        height: 0.8em;
+        border-radius: 0.2em;
+        background: currentColor;
+    }
+
+    .outer-container {
+        display: flex;
+        justify-content: center;  
+        align-items: center;  /* Centers vertically */
+        height: 100%;  /* Makes the container take up the full height of the viewport */
+        width: 100%; 
+    }
+    
+    .bcontainer {
+        position: relative;
+        width: 360px;
+        height: 640px;
+        margin-top: 150px;
+        background: rgba(0, 0, 0, 0);
+        transform: rotate(-30deg) skew(25deg) scale(0.8);
+        transition: 0.5s;
+    }
+    
+    .bcontainer img {
+        position: absolute;
+        width: 100%;
+        transition: 0.5s;
+    }
+    
+    .bcontainer:hover img:nth-child(4) {
+        transform: translate(160px, -160px);
+        opacity: 1;
+    }
+    
+    .bcontainer:hover img:nth-child(3) {
+        transform: translate(120px, -120px);
+        opacity: 0.8;
+    }
+    
+    .bcontainer:hover img:nth-child(2) {
+        transform: translate(80px, -80px);
+        opacity: 0.6;
+    }
+    
+    .bcontainer:hover img:nth-child(1) {
+        transform: translate(40px, -40px);
+        opacity: 0.4;
+    }
+
+    @media (max-width: 768px) {
+        header {
+            flex-direction: column;
+            height: auto;
+            padding: 10px;
+            text-align: center;
+        }
+        
+        .nav-links {
+            flex-direction: column;
+            gap: 10px;
+            padding: 10px 0;
+        }
+        
+        .sign-in-btn {
+            max-width: 180px;
+            margin: 10px 0;
+        }
+        
+        .info-container {
+            flex-direction: column;
+            text-align: center;
+        }
+        
+        .grid-container {
+            grid-template-columns: 1fr;
+        }
+    }
+
+
+
