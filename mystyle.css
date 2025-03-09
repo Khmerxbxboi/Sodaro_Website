@@ -6,13 +6,10 @@
     font-family: Arial, sans-serif;
 }
 
+
 body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    background: #f4f4f4;
-    padding-top: 70px;
-    padding-bottom: 50px;
+    position: relative;
+    padding-bottom: 70px; /* To make space for the footer */
 }
 
 .logo {
@@ -35,6 +32,8 @@ header {
     padding: 0 20px;
 }
 
+
+
 nav {
     display: flex;
     justify-content: center;
@@ -45,6 +44,7 @@ nav {
     list-style: none;
     display: flex;
     gap: 20px; 
+    padding: 0;
 }
 
 .nav-links li {
@@ -55,17 +55,21 @@ nav {
     color: white;
     text-decoration: none;
     font-size: 18px;
-    transition: color 0.3s ease;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+    padding-bottom: 5px; /* Space for underline effect */
 }
 
 .nav-links a:hover {
     color: #1E90FF;
+    border-bottom: 2px solid #1E90FF; /* Underline effect */
 }
+
 .logo img {
     width: 40px;
     height: 40px;
     margin-right: 10px;
 }
+
 
 
 header {
@@ -137,24 +141,19 @@ main {
 .info-container {
     display: flex;
     align-items: center;
+    justify-content: center;
     background: white;
-    padding: 20px;
+    padding: 30px; /* Space inside the border */
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    width: 100%; 
-    margin-bottom: 40px;
-    margin: 0;
-    padding: 0;
     width: 100%;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    height: 100%;
+    margin: 20px; /* Space outside the border */
 }
 
 .info-container img {
-    width: 55%;
-    height: 55%;
+    width: 35%;
+    height: 35%;
     border-radius: 10px;
     object-fit: cover;
 
@@ -208,10 +207,9 @@ main {
 
 
 
-
 footer {
     position: fixed;
-    bottom: 0;
+    bottom: -60px; /* Initially hidden offscreen */
     left: 0;
     width: 100%;
     height: 50px;
@@ -221,6 +219,35 @@ footer {
     align-items: center;
     justify-content: center;
     font-size: 16px;
+    transition: bottom 0.3s ease-in-out;
+}
+
+footer.show {
+    bottom: 0; /* Show when scrolled to the bottom */
+}
+
+/* Back-to-top arrow */
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #1E90FF;
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 50%;
+    display: none; /* Initially hidden */
+    transition: opacity 0.3s ease-in-out;
+}
+
+.back-to-top:hover {
+    background: #0f78cc;
+}
+
+/* Show back-to-top arrow when scrolled down */
+body.scrolled .back-to-top {
+    display: block;
 }
 
 /* 📱 MOBILE RESPONSIVENESS */

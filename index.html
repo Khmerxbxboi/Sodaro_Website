@@ -7,6 +7,19 @@
     <title>My Web Page</title>
     
     <link href="mystyle.css" rel="stylesheet" type="text/css">
+
+    <script src="StockDashboard.js" defer></script> <!-- Link to your JS file -->
+    <style>
+        .demo-button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+    </style>
 </head>
 <body>
 
@@ -17,19 +30,18 @@
             <span>Sodaro</span>
         </div>
 
-
         <nav>
             <ul class="nav-links">
                 <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
+                <li><a href="https://www.figma.com/proto/8iL9I3IcXMffCpuMV8w3p8/Portfolio-Design?node-id=1-2&t=cdrP4nf3TFlwvGh9-0&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=6%3A29">About</a></li>
                 <li><a href="#">Application</a></li>
-                <li><a href="#">investors</a></li>
+                <li><a href="#">Investors</a></li>
             </ul>
         </nav>
 
-        <!-- Sign In Button IMPORTANT $$$ -->
+        <!-- Sign In Button -->
         <a href="https://khmerxbxboi.github.io/Lab-3-Advanced-Layout-with-Flexbox-Grid-and-positioning/" target="_blank">
-          <button class="sign-in-btn">Sign in Sodaro</button>
+            <button class="sign-in-btn">Sign in Sodaro</button>
         </a>
     </header>
 
@@ -37,77 +49,66 @@
         <div class="info-container">
             <img src="Project_Sodaro_001_A_004.jpg" alt="Feature Image"> 
             <div class="info-text">
-              <h1>About Sodaro Market AI Application</h1>
-              <p>Sodaro's AI-powered platform leverages a variety of data sources to provide accurate and insightful market analysis. The platform gathers real-time data, behavior patterns, news, events, and sentiment analysis to predict and assess market movements, making it an invaluable tool for investors.</p>
-              <p>By integrating these diverse data sets, Sodaro allows users to make data-driven decisions based on comprehensive market understanding. Whether you're interested in market trends, sentiment shifts, or real-time market feeds, Sodaro brings all of this data together in an easy-to-use interface.</p>
-                <BR>
-                <button class="demo-button">Request Demo</button>
+                <h1>About Sodaro Platform Application</h1>
+                <p>Sodaro's AI-powered platform leverages a variety of data sources to provide accurate and insightful market analysis. The platform gathers real-time data, behavior patterns, news, events, and sentiment analysis to predict and assess market movements, making it an invaluable tool for investors.</p>
+                <p>By integrating these diverse data sets, Sodaro allows users to make data-driven decisions based on comprehensive market understanding. Whether you're interested in market trends, sentiment shifts, or real-time market feeds, Sodaro brings all of this data together in an easy-to-use interface.</p>
+                <br />
+                <button class="demo-button" onclick="showPopup()">Request Demo</button>
             </div>
         </div>
 
-     <BR>
-      <div class="grid-container">
-        <div class="content-box">
-            <h2>Behavioral Data Analysis</h2>
-            <p></p>
-            
-            <!-- Product Image 1 -->
-            <div class="product">
-                <img src="001.jpeg" alt="Product 1" class="product-image">
-                <p class="product-description">Track global the application could market news, human behavioral patterns, and economic data to predict market movements.</p>
+        <div class="grid-container">
+            <div class="content-box">
+                <h2>Behavioral Data Analysis</h2>
+                
+                <div class="product">
+                    <img src="001.jpeg" alt="Product 1" class="product-image">
+                    <p class="product-description">Track global market news, human behavioral patterns, and economic data to predict market movements.</p>
+                </div>
+                <br />
             </div>
-                <BR>
-        </div>
-        <div class="content-box">
-            <h2>Goal-Oriented Trading</h2>
-            <p></p>
-            
-            <!-- Product Image 2 -->
-            <div class="product">
-                <img src="002.jpeg" alt="Product 2" class="product-image">
-                <p class="product-description">The application would then tailor its trading strategy, including swing and pattern trading, to help achieve that goal.</p>
+            <div class="content-box">
+                <h2>Goal-Oriented Trading</h2>
+                
+                <div class="product">
+                    <img src="002.jpeg" alt="Product 2" class="product-image">
+                    <p class="product-description">The application tailors its trading strategy, including swing and pattern trading, to help achieve that goal.</p>
+                </div>
             </div>
-        </div>
-        <div class="content-box">
-            <h2>AI-Search Engine</h2>
-            <p></p>
-            
-            <!-- Product Image 3 -->
-            <div class="product">
-                <img src="003.jpeg" alt="Product 3" class="product-image">
-                <p class="product-description"> Similar to how a search engine provides relevant results based on queries, this application would use AI to continually analyze market data.</p>
+            <div class="content-box">
+                <h2>AI-Search Engine</h2>
+                
+                <div class="product">
+                    <img src="003.jpeg" alt="Product 3" class="product-image">
+                    <p class="product-description">Similar to how a search engine provides relevant results, this application continuously analyzes market data using AI.</p>
+                </div>
             </div>
         </div>
-    </div>
-    
-    <div class="info-container">
-      <!-- Pie Chart Section -->
-      
-      <figure class="pie-chart">
-        <h4>World News & Human Behavior</h4>
-      
-        <figcaption>
-           Market Data 38<span style="color:#4e79a7"></span><br>
-          Behavior Data 23<span style="color:#f28e2c"></span><br>
-          News and Events Data 16<span style="color:#e15759"></span><br>
-          Sentiment Data 10<span style="color:#76b7b2"></span>
-        </figcaption>
-        <cite>Sodaro AI</cite>
-      </figure>
-</div>
-      <BR
-        <BR>
-    
-      <!-- Content Section -->
-      <div class="content">
-      
-      </div>
-    </div>
-     
 
-    <footer>
-        <p>© Sot Family LLC - <h6> &nbsp Web Design by Jayaproduction</h6></p>
+        <div class="info-container">
+            <!-- Pie Chart Section -->
+            <figure class="pie-chart">
+                <h4>World News & Human Behavior</h4>
+                <figcaption>
+                    Market Data 38<span style="color:#4e79a7"></span><br />
+                    Behavior Data 23<span style="color:#f28e2c"></span><br />
+                    News and Events Data 16<span style="color:#e15759"></span><br />
+                    Sentiment Data 10<span style="color:#76b7b2"></span>
+                </figcaption>
+                <cite>Sodaro AI</cite>
+            </figure>
+        </div>
+
+        <br />
+        <br />
+
+        <div class="content"></div>
+    </main>
+
+    <footer id="footer">
+        <p>© Sot Family LLC - Web Design by Jayaproduction</p>
+        <a href="#top" id="backToTop" class="back-to-top">↑</a>
     </footer>
-
+    <script src="footer.js"></script>
 </body>
 </html>
